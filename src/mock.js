@@ -6,11 +6,12 @@ export const profile = {
   firstName: "Lovely",
   lastName: "Tiwari",
   title: "Full Stack Developer",
-  tagline: "Crafting scalable web & mobile experiences",
+tagline:
+  "Building scalable web, mobile & cloud-powered digital experiences",
   summary:
-    "Full Stack Developer with hands-on experience delivering scalable web and mobile applications across 8+ real-world projects. Currently at SJ Medialabs, I specialize in end-to-end solutions using modern JavaScript and Python ecosystems — leading projects independently from concept to deployment with strong ownership and accountability.",
-  longBio:
-    "I enjoy transforming ideas into reliable digital products, architecting clean and maintainable systems, and continuously learning modern technologies to deliver impactful user experiences. My focus spans responsive UI engineering, secure API design, real-time systems and cross-platform mobile apps.",
+  "Full Stack Developer with experience building scalable web and mobile applications using React.js, Next.js, Node.js, Python, MongoDB, Firebase, and React Native. Delivered 8+ real-world projects independently, managing complete development lifecycles from planning and architecture to deployment and maintenance. Passionate about creating performant, user-centric digital products with clean architecture and modern technologies.",
+longBio:
+  "I specialize in developing modern full-stack applications with a strong focus on scalability, performance, and user experience. My expertise spans frontend engineering with React.js and Next.js, backend systems with Node.js and Python, cloud integrations, REST API development, and cross-platform mobile applications using React Native. I enjoy taking ownership of complete projects, solving complex technical challenges, and continuously learning emerging technologies to build impactful digital experiences.",
   location: "Hyderabad, Telangana, India",
   email: "lovelyt7989@gmail.com",
   phone: "+91 7898748290",
@@ -93,13 +94,24 @@ export const experiences = [
     location: "Greater Hyderabad Area",
     current: true,
     bullets: [
-      "Architect and ship end-to-end web & mobile applications using React, Next.js, Node.js and Python.",
-      "Own complete project lifecycle — requirement analysis, system design, development, testing and production release.",
-      "Build scalable MongoDB/Firebase backends and performant REST APIs powering real-time user experiences.",
-      "Collaborate directly with stakeholders to translate product ideas into reliable, maintainable systems."
+      "Developing scalable full-stack web and mobile applications using React.js, Next.js, Node.js, Python, MongoDB, and Firebase.",
+      "Leading complete project lifecycles independently — from requirement analysis and system architecture to deployment and production maintenance.",
+      "Building secure REST APIs, real-time systems, admin dashboards, authentication flows, and payment integrations for production-grade applications.",
+      "Optimizing application performance, responsiveness, and backend scalability for improved user experience and system reliability.",
+      "Collaborating directly with stakeholders and clients to transform business requirements into high-quality digital solutions."
     ],
-    tech: ["React", "Next.js", "Node.js", "Python", "MongoDB", "AWS"]
+    tech: [
+      "React.js",
+      "Next.js",
+      "Node.js",
+      "Python",
+      "MongoDB",
+      "Firebase",
+      "AWS",
+      "REST APIs"
+    ]
   },
+
   {
     id: "exp-2",
     company: "GALAS IT Solutions",
@@ -108,13 +120,21 @@ export const experiences = [
     location: "Remote",
     current: false,
     bullets: [
-      "Developed production-grade MERN stack features across multiple client projects.",
-      "Built reusable React component libraries and authentication flows using JWT & Firebase.",
-      "Integrated third-party APIs and optimized MongoDB queries for high-traffic endpoints.",
-      "Participated in code reviews, sprint planning and CI/CD deployments."
+      "Worked on MERN stack applications and developed reusable frontend components using React.js.",
+      "Implemented authentication systems, API integrations, and responsive user interfaces for client projects.",
+      "Integrated Firebase services and optimized MongoDB database queries for improved application performance.",
+      "Participated in debugging, feature development, deployment workflows, and collaborative code reviews."
     ],
-    tech: ["MongoDB", "Express", "React", "Node.js", "Firebase"]
+    tech: [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "Firebase",
+      "JavaScript"
+    ]
   },
+
   {
     id: "exp-3",
     company: "Acmegrade",
@@ -123,11 +143,18 @@ export const experiences = [
     location: "Gwalior, Madhya Pradesh",
     current: false,
     bullets: [
-      "Designed and developed full-stack websites using HTML, CSS, JavaScript & Bootstrap.",
-      "Implemented backend logic with Java and relational data models using MySQL.",
-      "Completed structured training in modern web development workflows."
+      "Developed full-stack web applications using HTML, CSS, JavaScript, Bootstrap, Java, and MySQL.",
+      "Built responsive user interfaces and implemented backend functionalities for academic projects.",
+      "Learned software development workflows, debugging practices, and database design fundamentals."
     ],
-    tech: ["HTML", "CSS", "JavaScript", "Bootstrap", "MySQL", "Java"]
+    tech: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Bootstrap",
+      "Java",
+      "MySQL"
+    ]
   }
 ];
 
@@ -135,30 +162,64 @@ export const experiences = [
 export const projects = [
   {
     id: "proj-1",
-    title: "Coming Soon",
-    category: "Full Stack",
+    title: "E-Commerce Order & Shipment Management System",
+    category: "Full Stack Web Application",
     description:
-      "Project details will be added shortly. Showcasing production work built with the MERN stack and modern cloud infrastructure.",
-    tech: ["React", "Node.js", "MongoDB"],
-    placeholder: true
+      "Developed a production-grade e-commerce order management platform with Shiprocket integration, real-time shipment tracking, AWB generation, COD & prepaid order handling, return management workflows, and admin dashboards. Implemented complete order lifecycle automation with secure APIs and scalable backend architecture.",
+    tech: [
+      "Next.js",
+      "React.js",
+      "Node.js",
+      "PostgreSQL",
+      "Shiprocket API",
+      "Tailwind CSS"
+    ]
   },
+
   {
     id: "proj-2",
-    title: "Coming Soon",
-    category: "Mobile App",
+    title: "Portfolio & AI Assistant Platform",
+    category: "Modern Portfolio Application",
     description:
-      "Cross-platform mobile application built with React Native & Expo. Details being added.",
-    tech: ["React Native", "Expo", "Firebase"],
-    placeholder: true
+      "Built a responsive developer portfolio platform with dynamic sections, AI-powered assistant integration, animated UI components, and optimized SEO performance. Designed scalable frontend architecture with reusable components and responsive layouts.",
+    tech: [
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "JavaScript",
+      "Framer Motion"
+    ]
   },
+
   {
     id: "proj-3",
-    title: "Coming Soon",
-    category: "Next.js SaaS",
+    title: "Cross-Platform Mobile App",
+    category: "Mobile Application",
     description:
-      "Server-rendered SaaS application with Next.js, Python backend and scalable cloud deployment.",
-    tech: ["Next.js", "Python", "AWS"],
-    placeholder: true
+      "Developed a cross-platform mobile application using React Native and Expo with Firebase authentication, real-time database integration, push notifications, and responsive mobile UI. Focused on performance optimization and smooth user experience across Android devices.",
+    tech: [
+      "React Native",
+      "Expo",
+      "Firebase",
+      "JavaScript",
+      "REST APIs"
+    ]
+  },
+
+  {
+    id: "proj-4",
+    title: "Admin Dashboard & CRM System",
+    category: "Business Management Platform",
+    description:
+      "Created a scalable admin dashboard and CRM system featuring user management, analytics tracking, proposal workflows, authentication systems, and responsive data tables with filtering and search functionalities.",
+    tech: [
+      "React.js",
+      "Node.js",
+      "MongoDB",
+      "Express.js",
+      "JWT",
+      "Tailwind CSS"
+    ]
   }
 ];
 
@@ -205,9 +266,9 @@ export const languages = [
 
 export const stats = [
   { label: "Projects Delivered", value: "8+" },
-  { label: "Tech Stacks", value: "10+" },
-  { label: "Client Satisfaction", value: "100%" },
-  { label: "Years Coding", value: "3+" }
+  { label: "Years Experience", value: "1.5+" },
+  { label: "Tech Stack Expertise", value: "10+" },
+  { label: "Production Deployments", value: "Multiple" }
 ];
 
 // Chatbot mock responses — will be replaced by backend LLM endpoint

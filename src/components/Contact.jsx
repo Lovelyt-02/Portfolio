@@ -1,8 +1,10 @@
 import React, { useState } from "react";
-import { Mail, Phone, MapPin, Send, Github, Linkedin, ArrowUpRight } from "lucide-react";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
-import { Textarea } from "./ui/textarea";
+import emailjs from "@emailjs/browser";
+import { Mail, Phone, MapPin, Send, Computer, ArrowUpRight } from "lucide-react";
+import { FaLinkedinIn } from "react-icons/fa";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "../hooks/use-toast";
 import { profile } from "../mock";
 
@@ -20,18 +22,35 @@ const Contact = () => {
       return;
     }
     setSending(true);
-    // Mock submission — store locally. Will be wired to backend later.
-    const messages = JSON.parse(localStorage.getItem("contact_messages") || "[]");
-    messages.push({ ...form, at: new Date().toISOString() });
-    localStorage.setItem("contact_messages", JSON.stringify(messages));
-    setTimeout(() => {
-      setSending(false);
-      setForm({ name: "", email: "", message: "" });
+
+    try {
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          from_email: form.email,
+          message: form.message,
+          to_name: profile.name,
+        },
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+
       toast({
-        title: "Message queued",
-        description: "Thanks! Your message was saved locally. Backend wiring coming soon.",
+        title: "Message sent!",
+        description: "Thanks! I've received your message and will get back to you soon.",
       });
-    }, 800);
+      setForm({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+      toast({
+        title: "Submission failed",
+        description: "Something went wrong while sending your message. Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setSending(false);
+    }
   };
 
   const items = [
@@ -82,7 +101,7 @@ const Contact = () => {
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-slate-700 text-slate-300 hover:border-cyan-400/60 hover:text-cyan-200 hover:bg-cyan-400/5"
                 >
-                  <Github className="h-4 w-4" />
+                  <Computer className="h-4 w-4" />
                   <span className="text-sm">GitHub</span>
                 </a>
                 <a
@@ -91,7 +110,7 @@ const Contact = () => {
                   rel="noreferrer"
                   className="inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-slate-700 text-slate-300 hover:border-cyan-400/60 hover:text-cyan-200 hover:bg-cyan-400/5"
                 >
-                  <Linkedin className="h-4 w-4" />
+                  <FaLinkedinIn className="h-4 w-4" />
                   <span className="text-sm">LinkedIn</span>
                 </a>
               </div>

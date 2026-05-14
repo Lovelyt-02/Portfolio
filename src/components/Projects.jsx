@@ -1,5 +1,6 @@
 import React from "react";
-import { ExternalLink, Github, Sparkles } from "lucide-react";
+import { ExternalLink, Sparkles } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 import { projects } from "../mock";
 
 const Projects = () => {
@@ -77,7 +78,7 @@ const Projects = () => {
                     disabled={p.placeholder}
                     className="inline-flex items-center gap-1.5 text-sm text-slate-300 hover:text-cyan-200 disabled:text-slate-500 disabled:cursor-not-allowed"
                   >
-                    <Github className="h-3.5 w-3.5" /> Code
+                    <FaGithub className="h-3.5 w-3.5" /> Code
                   </button>
                 </div>
               </div>

@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { ArrowRight, Download, Github, Linkedin, Mail, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
+import { FaArrowRight, FaLinkedin, FaEnvelope, FaLaptop } from "react-icons/fa";
+import { MdOutlineAutoAwesome } from "react-icons/md";
 import { Button } from "./ui/button";
 import { profile, stats, techStack } from "../mock";
 
@@ -79,14 +81,14 @@ const Hero = () => {
                 onClick={() => scrollTo("projects")}
                 className="bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-semibold rounded-xl px-6 h-12 shadow-[0_0_30px_rgba(34,211,238,0.3)] hover:shadow-[0_0_40px_rgba(34,211,238,0.5)]"
               >
-                View My Work <ArrowRight className="ml-2 h-4 w-4" />
+                View My Work <FaArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button
                 variant="outline"
                 onClick={() => scrollTo("contact")}
                 className="rounded-xl px-6 h-12 border-cyan-400/30 bg-transparent text-cyan-100 hover:bg-cyan-400/10 hover:text-white hover:border-cyan-400/60"
               >
-                <Mail className="mr-2 h-4 w-4" /> Get In Touch
+                <FaEnvelope className="mr-2 h-4 w-4" /> Get In Touch
               </Button>
             </div>
 
@@ -95,9 +97,9 @@ const Hero = () => {
               <div className="h-px w-10 bg-slate-700" />
               <div className="flex items-center gap-2">
                 {[
-                  { href: profile.github, Icon: Github, label: "GitHub" },
-                  { href: profile.linkedin, Icon: Linkedin, label: "LinkedIn" },
-                  { href: `mailto:${profile.email}`, Icon: Mail, label: "Email" },
+                  { href: profile.github, Icon: FaLaptop, label: "Computer" },
+                  { href: profile.linkedin, Icon: FaLinkedin, label: "LinkedIn" },
+                  { href: `mailto:${profile.email}`, Icon: FaEnvelope, label: "Email" },
                 ].map(({ href, Icon, label }) => (
                   <a
                     key={label}

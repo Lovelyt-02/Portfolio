@@ -1,5 +1,6 @@
 import React from "react";
-import { Github, Linkedin, Mail, ArrowUp } from "lucide-react";
+import { Computer, Mail, ArrowUp } from "lucide-react";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { profile } from "../mock";
 
 const Footer = () => {
@@ -37,8 +38,8 @@ const Footer = () => {
             <p className="mono text-xs text-slate-500 uppercase tracking-widest mb-3">Connect</p>
             <div className="flex gap-2">
               {[
-                { href: profile.github, Icon: Github, label: "GitHub" },
-                { href: profile.linkedin, Icon: Linkedin, label: "LinkedIn" },
+                { href: profile.github, Icon: FaGithub, label: "Github" },
+                { href: profile.linkedin, Icon: FaLinkedinIn, label: "LinkedIn" },
                 { href: `mailto:${profile.email}`, Icon: Mail, label: "Email" },
               ].map(({ href, Icon, label }) => (
                 <a
