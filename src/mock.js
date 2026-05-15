@@ -224,7 +224,10 @@ export const projects = [
       "Node.js",
       "PostgreSQL",
       "Tailwind CSS",
-      "REST APIs"
+      "REST APIs",
+      "Shiprocket",
+      "Razorpay",
+      "SMS & Mail Notification"
     ]
   },
 
