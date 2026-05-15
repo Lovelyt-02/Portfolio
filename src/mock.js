@@ -6,12 +6,12 @@ export const profile = {
   firstName: "Lovely",
   lastName: "Tiwari",
   title: "Full Stack Developer",
-tagline:
-  "Building scalable web, mobile & cloud-powered digital experiences",
+  tagline:
+    "Building scalable web, mobile & cloud-powered digital experiences",
   summary:
-  "Full Stack Developer with experience building scalable web and mobile applications using React.js, Next.js, Node.js, Python, MongoDB, Firebase, and React Native. Delivered 8+ real-world projects independently, managing complete development lifecycles from planning and architecture to deployment and maintenance. Passionate about creating performant, user-centric digital products with clean architecture and modern technologies.",
-longBio:
-  "I specialize in developing modern full-stack applications with a strong focus on scalability, performance, and user experience. My expertise spans frontend engineering with React.js and Next.js, backend systems with Node.js and Python, cloud integrations, REST API development, and cross-platform mobile applications using React Native. I enjoy taking ownership of complete projects, solving complex technical challenges, and continuously learning emerging technologies to build impactful digital experiences.",
+    "Full Stack Developer with experience building scalable web and mobile applications using React.js, Next.js, Node.js, Python, MongoDB, Firebase, and React Native. Delivered 8+ real-world projects independently, managing complete development lifecycles from planning and architecture to deployment and maintenance. Passionate about creating performant, user-centric digital products with clean architecture and modern technologies.",
+  longBio:
+    "I specialize in developing modern full-stack applications with a strong focus on scalability, performance, and user experience. My expertise spans frontend engineering with React.js and Next.js, backend systems with Node.js and Python, cloud integrations, REST API development, and cross-platform mobile applications using React Native. I enjoy taking ownership of complete projects, solving complex technical challenges, and continuously learning emerging technologies to build impactful digital experiences.",
   location: "Hyderabad, Telangana, India",
   email: "lovelyt7989@gmail.com",
   phone: "+91 7898748290",
@@ -162,41 +162,80 @@ export const experiences = [
 export const projects = [
   {
     id: "proj-1",
-    title: "E-Commerce Order & Shipment Management System",
-    category: "Full Stack Web Application",
+    title: "SaaS ERP & Financial Management Platform",
+    category: "Enterprise SaaS Platform",
+    featured: true,
+
+    shortDescription:
+      "Built a full-stack SaaS ERP and financial management platform for SMEs featuring GST invoicing, ledger management, CRM workflows, analytics dashboards, and a pay-as-you-go bulk email campaign system with subscription-based top-up architecture.",
+
     description:
-      "Developed a production-grade e-commerce order management platform with Shiprocket integration, real-time shipment tracking, AWB generation, COD & prepaid order handling, return management workflows, and admin dashboards. Implemented complete order lifecycle automation with secure APIs and scalable backend architecture.",
+      "Engineered a scalable cloud-based ERP and financial operations platform from scratch for SMEs and service businesses. Developed a complete multi-module SaaS ecosystem covering accounting, GST invoicing, CRM workflows, customer communication, analytics dashboards, subscription billing, and bulk email marketing automation with pay-as-you-go credit architecture.",
+
+    highlights: [
+      "Developed a GST-ready invoicing and ledger management system",
+      "Built customer, payment, expense, and financial tracking modules",
+      "Created analytics dashboards with role-based access control",
+      "Implemented quotation, billing, and automated payment reminder workflows",
+      "Built bulk email campaign infrastructure with pay-as-you-go top-up system",
+      "Developed subscription and credit-based usage architecture",
+      "Integrated transactional email and notification systems",
+      "Designed scalable database architecture for multi-business operations",
+      "Implemented secure authentication and workflow automation",
+      "Optimized API performance and dashboard responsiveness"
+    ],
+
+    technicalHighlights: [
+      "Built using Next.js App Router architecture",
+      "Implemented REST APIs and server-side actions",
+      "Designed relational schemas using Prisma ORM",
+      "Created reusable dashboard and modular UI components",
+      "Implemented billing and credit consumption logic",
+      "Developed campaign scheduling and email delivery workflows",
+      "Built scalable SaaS-ready backend architecture"
+    ],
+
     tech: [
       "Next.js",
-      "React.js",
-      "Node.js",
+      "TypeScript",
       "PostgreSQL",
-      "Shiprocket API",
-      "Tailwind CSS"
+      "Prisma",
+      "Node.js",
+      "Tailwind CSS",
+      "REST APIs",
+      "Authentication",
+      "Email Automation",
+      "Subscription Systems",
+      "SaaS Architecture"
     ]
   },
 
   {
     id: "proj-2",
-    title: "Portfolio & AI Assistant Platform",
-    category: "Modern Portfolio Application",
+    title: "E-Commerce Order & Shipment Management System",
+    category: "Full Stack Web Application",
+
     description:
-      "Built a responsive developer portfolio platform with dynamic sections, AI-powered assistant integration, animated UI components, and optimized SEO performance. Designed scalable frontend architecture with reusable components and responsive layouts.",
+      "Developed a production-grade e-commerce order management platform with shipment automation, order lifecycle management, tracking systems, COD/prepaid workflows, return handling, and admin dashboards.",
+
     tech: [
-      "React.js",
       "Next.js",
+      "React.js",
+      "Node.js",
+      "PostgreSQL",
       "Tailwind CSS",
-      "JavaScript",
-      "Framer Motion"
+      "REST APIs"
     ]
   },
 
   {
     id: "proj-3",
-    title: "Cross-Platform Mobile App",
+    title: "Cross-Platform Mobile Application",
     category: "Mobile Application",
+
     description:
-      "Developed a cross-platform mobile application using React Native and Expo with Firebase authentication, real-time database integration, push notifications, and responsive mobile UI. Focused on performance optimization and smooth user experience across Android devices.",
+      "Built a React Native mobile application with Firebase authentication, real-time database integration, push notifications, and responsive cross-platform user experience.",
+
     tech: [
       "React Native",
       "Expo",
@@ -210,8 +249,10 @@ export const projects = [
     id: "proj-4",
     title: "Admin Dashboard & CRM System",
     category: "Business Management Platform",
+
     description:
-      "Created a scalable admin dashboard and CRM system featuring user management, analytics tracking, proposal workflows, authentication systems, and responsive data tables with filtering and search functionalities.",
+      "Created a scalable admin dashboard and CRM platform with analytics, user management, authentication workflows, reporting systems, and responsive UI architecture.",
+
     tech: [
       "React.js",
       "Node.js",
