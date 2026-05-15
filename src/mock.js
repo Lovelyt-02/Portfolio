@@ -264,7 +264,50 @@ export const projects = [
       "JWT",
       "Tailwind CSS"
     ]
-  }
+  },
+  {
+    id: "proj-5",
+    title: "Dynamic CMS & Content Management Platform",
+    category: "CMS Web Application",
+
+    shortDescription:
+      "Developed a scalable CMS platform with dynamic content management, role-based administration, media handling, SEO controls, and customizable page management workflows.",
+
+    description:
+      "Built a full-stack content management system enabling businesses to manage websites, pages, blogs, media assets, customer content, and administrative workflows through a modern dashboard interface. Developed reusable content modules, dynamic routing systems, role-based permissions, and optimized APIs for scalable content delivery.",
+
+    highlights: [
+      "Built dynamic page and content management workflows",
+      "Implemented role-based admin access and permissions",
+      "Developed blog, media, and category management systems",
+      "Created SEO-friendly dynamic routing architecture",
+      "Built reusable content sections and modular components",
+      "Implemented secure authentication and content controls",
+      "Optimized dashboard performance and API handling",
+      "Developed responsive admin interfaces for business operations"
+    ],
+
+    technicalHighlights: [
+      "Implemented modular CMS architecture",
+      "Built reusable admin dashboard components",
+      "Designed scalable database relationships",
+      "Created dynamic slug-based routing systems",
+      "Integrated image/media upload workflows",
+      "Built optimized server-side rendering logic"
+    ],
+
+    tech: [
+      "Next.js",
+      "React.js",
+      "TypeScript",
+      "Node.js",
+      "PostgreSQL",
+      "Prisma",
+      "Tailwind CSS",
+      "REST APIs",
+      "Authentication"
+    ]
+  },
 ];
 
 export const education = [
